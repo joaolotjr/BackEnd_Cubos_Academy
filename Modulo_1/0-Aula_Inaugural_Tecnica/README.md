@@ -1,5 +1,5 @@
 # BackEnd_Cubos_Academy
 
-mini game
+mini game of the game 
 
 
