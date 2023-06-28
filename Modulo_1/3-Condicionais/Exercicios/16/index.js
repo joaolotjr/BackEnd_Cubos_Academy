@@ -2,4 +2,8 @@
 const idadeDoAluno = 16;
 
 //valor verdadeiro ou falso que informa se possui responsável
-const possuiResponsavel = false;
+const possuiResponsavel = true;
+
+if(idadeDoAluno >=18 || possuiResponsavel) console.log(`Rematrícula realizada com sucesso`);
+
+else if(idadeDoAluno < 18) console.log(`Não é possível fazer a rematrícula`);
