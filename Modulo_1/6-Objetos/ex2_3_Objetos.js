@@ -30,4 +30,4 @@ console.log(cliente.Idade)
 
 console.log(cliente.Produtos[0].nome)
 
-console.log(cliente.Produtos.preco)
+console.log(cliente.Produtos[2].preco)
