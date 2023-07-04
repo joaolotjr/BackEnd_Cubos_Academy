@@ -6,9 +6,11 @@ const pessoa = {
     apelidos: ["Junior", "Ju", "Jr"]
 
 }
-let aux = "Não possui"
+let aux = ( pessoa.temCNH ? "possui" : "não possui"); // ternário
 
- if(pessoa.temCNH){ aux = "possui"}
+ //let aux = "";
+ //if(pessoa.temCNH){ aux = "possui"}
+ //else { aux = "não possui"}
 
 
 console.log(`${pessoa.nome} tem ${pessoa.idade} anos, ${pessoa.altura}cm de altura, ${aux} CNH e tem os seguintes apelidos :`)
