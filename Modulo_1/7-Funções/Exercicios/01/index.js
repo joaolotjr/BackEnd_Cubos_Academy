@@ -35,7 +35,6 @@ function corrigirProva (prova){
         }
     }
     nota = (acertos/prova.questoes.length)*10;
-
     console.log(`O aluno(a) acertou ${acertos} questões e obteve nota ${nota}`)
 }
 
