@@ -17,7 +17,7 @@ A lista pode conter até 1000 inteiros positivos.
 
 Imprima na tela o total acumulado nessa lista.
 
-- **Sample Input 0**
+**Sample Input 0**
 
 ```
 1 2 3 4
@@ -25,7 +25,7 @@ Imprima na tela o total acumulado nessa lista.
 
 
 
-- **Sample Output 0**
+**Sample Output 0**
 
 ```
 10
