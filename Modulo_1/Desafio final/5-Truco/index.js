@@ -2,7 +2,6 @@ const carta = "Q";
 
 // copiar apartir daqui
 
-
 if(carta == "Q"){
     console.log(`J`)
 }
