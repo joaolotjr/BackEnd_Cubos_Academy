@@ -1,4 +1,4 @@
-const texto = "  Cuidado, pois usuarios as . vezes deixam espacos vazios no fim do texto sem querer ";
+const texto = "  . ";
 
 // copiar apartir daqui
 
@@ -33,7 +33,7 @@ for(i=0; i<listaComUmEspacoSo.length; i++){
 if(listaComUmEspacoSo.length > 0 && contador == 0){
     console.log(1)
 }
-else if(texto.length === 0){
+else if(listaComUmEspacoSo.length === 0){
     console.log(0)
 }
 else if(contador > 0){
