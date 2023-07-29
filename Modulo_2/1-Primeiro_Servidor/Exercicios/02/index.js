@@ -13,8 +13,7 @@
     t++;
     console.log(t);
     return;
-    }
-    
+    }    
     clearInterval(timer);             //Finaliza o cronometro identificado por timer.
     console.log("Cronometro Pausado");
   }
