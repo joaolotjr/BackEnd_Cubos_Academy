@@ -14,8 +14,13 @@ const segundoIntermediario = (req, res, next) =>{
     next();
 }
 
-app.use(primeiroIntermediario);
-app.use(segundoIntermediario);
+const intermediarioDaRota = (req, res, next) =>{
+    console.log('passei no intermediário da rota')
+    next();
+}
+
+//app.use(primeiroIntermediario);
+//app.use(segundoIntermediario);
 
 
 
@@ -25,7 +30,7 @@ app.get('/', (req, res) =>{
 
 
 // http://localhost:3000/professores
-app.get('/professores', filtrarProfessores)
+app.get('/professores', intermediarioDaRota, filtrarProfessores)
 
 // http://localhost:3000/professores/2
 app.get('/professores/:id', encontraProfessor )
