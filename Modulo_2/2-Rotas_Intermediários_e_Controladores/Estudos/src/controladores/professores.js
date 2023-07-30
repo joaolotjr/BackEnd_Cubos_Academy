@@ -4,6 +4,8 @@ const filtrarProfessores = (req, res) =>{
     const {Stack} = req.query
     let resultado = professores;
 
+    console.log(`cheguei no controlador de listagem do professor`)
+
     if(Stack){ 
         resultado = professores.filter((professor) => {
             return professor.Stack === Stack;
