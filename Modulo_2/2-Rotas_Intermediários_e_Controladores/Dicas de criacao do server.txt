@@ -1,0 +1,61 @@
+Iniciar projeto 
+-> npm init -y
+
+-------------------
+Cria o .gitignore e adiciona o node_modules
+
+-------------------
+Instalar express
+-> npm install express
+
+-------------------
+criar pasta src e criar index.js
+add no index.js
+
+const express = require('express');
+
+const app = express();
+
+const conteudo = (req, res) => {
+    console.log(`Server on`)
+    res.send(`Pagina Inicial`)
+}
+
+app.get('/', conteudo)
+
+app.listen(3000)
+
+-------------------
+Instalar nodemon
+-> npm install -D nodemon
+
+-------------------
+Dentro de package.json trocar o conteudo dentro de "scripts" por
+-> "dev": "nodemon ./src/index.js"
+
+-------------------
+Iniciar o server com
+-> npm run dev
+
+-------------------
+Instalar insonia se for primeiro projeto no PC
+
+-------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
