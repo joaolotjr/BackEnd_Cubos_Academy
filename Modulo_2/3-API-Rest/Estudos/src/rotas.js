@@ -8,5 +8,6 @@ rotas.get('/instrutores/:id', instrutores.obterInstrutor)
 rotas.post('/instrutores', instrutores.cadastrarInstrutor)
 rotas.put('/instrutores/:id', instrutores.atualizarInstrutor)
 rotas.patch('/instrutores/:id/status', instrutores.atualizarStatusInstrutores)
+rotas.delete('/instrutores/:id', instrutores.excluirInstrutor)
 
 module.exports = rotas;
