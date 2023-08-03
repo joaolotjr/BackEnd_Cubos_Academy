@@ -1,9 +1,8 @@
 const express = require('express');
+const instrutores = require('./controladores/instrutores');
 
 const rotas = express();
 
-rotas.get('/', (req, res) => {
-    res.send('Tudo OK !!')
-})
+rotas.get('/instrutores', instrutores.listarInstrutores)
 
 module.exports = rotas;
