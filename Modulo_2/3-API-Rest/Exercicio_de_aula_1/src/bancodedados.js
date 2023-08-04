@@ -1,5 +1,6 @@
 const bancodedados = {
     identificadorInstrutor: 3,
+    identificadorAula: 2,
     instrutores: [
         {
             id: 1,
@@ -13,6 +14,14 @@ const bancodedados = {
             email:'dani@gmail.com',
             status: true
         },
+    ],
+    aulas: [
+        {
+            id: 1,
+            id_Istrutor: 1,
+            titulo: "frontEnd",
+            descricao: "Ensinado frontEnd !!"
+        }
     ]
 }
 

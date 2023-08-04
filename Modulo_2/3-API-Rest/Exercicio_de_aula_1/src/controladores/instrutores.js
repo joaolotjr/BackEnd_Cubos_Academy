@@ -66,7 +66,7 @@ const atualizarInstrutor = (req, res) => {
 
     instrutor.nome = nome;
     instrutor.email = email;
-    instrutor.status = status
+    instrutor.status = status;
 
     return res.status(204).send()
 }
@@ -107,8 +107,6 @@ const excluirInstrutor = (req, res) => {
 
     return res.status(204).send();
 }
-
-
 
 
 
