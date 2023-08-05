@@ -16,6 +16,8 @@ const express = require('express');
 
 const app = express();
 
+app.use(express.json());
+
 const conteudo = (req, res) => {
     console.log(`Server on`)
     res.send(`Pagina Inicial`)
