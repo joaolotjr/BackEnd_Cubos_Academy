@@ -7,7 +7,8 @@ const date = new Date(2017, 3, 12);
 console.log(format(date, "dd/MMM/yyyy"))
 */
 
-const { addBusinessDays } = require("date-fns")
+
+
 
 //----------Date-fns - parse
 /*
@@ -27,13 +28,24 @@ console.log(date);
     }));
 */
 
-//----------Date-fns - addBusinessDay
-
+//---------- Date-fns - addBusinessDay
+/*
+const { addBusinessDays } = require("date-fns")
 const result = addBusinessDays(new Date(2014, 8, 1), 10)
 
 console.log(result);
+*/
 
-Date-fns - difference
+//---------- Date-fns - difference
+/*
+const differenceInHours = require("date-fns/differenceInHours")
+let result = differenceInHours(
+    new Date(2023, 6, 2, 19, 0),
+    new Date(2023, 6, 2, 6, 50)
+);
+console.log(result);
+*/
+
 
 
 
