@@ -70,6 +70,16 @@ const result1 = isAfter(new Date(2014, 8, 1, 1, 23, 45), new Date(2013, 8, 1, 1,
 console.log(result1);
 */
 
+//----------  Date-fns - startOf e endOf
+
+const startOfHours = require('date-fns/startOfHour')
+/*
+
+const result1 = startOfHours(new Date(2014, 8, 1, 1, 23, 45))
+
+console.log(result1);
+*/
+
 
 
 
