@@ -62,6 +62,13 @@ let result = isSameDay(new Date(2014, 8, 1, 1, 23, 45), new Date(2014, 8, 1, 15,
 console.log(result)
 */
 
+//----------  Date-fns - isAfter - isBefore
+/*
+const isAfter = require('date-fns/isAfter');
+
+const result1 = isAfter(new Date(2014, 8, 1, 1, 23, 45), new Date(2013, 8, 1, 1, 23, 45))
+console.log(result1);
+*/
 
 
 
