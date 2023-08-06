@@ -46,7 +46,13 @@ let result = differenceInHours(
 console.log(result);
 */
 
+//---------- Date-fns - set
+/*
+const set = require('date-fns/set')
 
+let result = set(new Date(2014, 8, 1, 1, 23, 45), { hours: 12 })
+console.log(result);
+*/
 
 
 
