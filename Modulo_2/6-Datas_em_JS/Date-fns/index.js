@@ -71,9 +71,9 @@ console.log(result1);
 */
 
 //----------  Date-fns - startOf e endOf
-
-const startOfHours = require('date-fns/startOfHour')
 /*
+const startOfHours = require('date-fns/startOfHour')
+
 
 const result1 = startOfHours(new Date(2014, 8, 1, 1, 23, 45))
 
