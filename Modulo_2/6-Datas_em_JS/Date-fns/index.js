@@ -7,6 +7,8 @@ const date = new Date(2017, 3, 12);
 console.log(format(date, "dd/MMM/yyyy"))
 */
 
+const { addBusinessDays } = require("date-fns")
+
 //----------Date-fns - parse
 /*
 const result = parse('02/11/2014', 'MM/dd/yyyy', new Date())
@@ -24,15 +26,17 @@ console.log(date);
     years: 1
     }));
 */
-date = add(date,{
-    seconds: 2,
-    days: 1,
-    years: 1
-    });
-console.log(date);
-/*
 
 //----------Date-fns - addBusinessDay
+
+const result = addBusinessDays(new Date(2014, 8, 1), 10)
+
+console.log(result);
+
+Date-fns - difference
+
+
+
 
 
 
