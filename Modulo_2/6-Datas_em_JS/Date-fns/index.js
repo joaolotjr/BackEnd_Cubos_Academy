@@ -54,8 +54,13 @@ let result = set(new Date(2014, 8, 1, 1, 23, 45), { hours: 12 })
 console.log(result);
 */
 
+//---------- Date-fns - isSame
+/*
+const isSameDay = require('date-fns/isSameDay');
 
-
+let result = isSameDay(new Date(2014, 8, 1, 1, 23, 45), new Date(2014, 8, 1, 15, 23, 45))
+console.log(result)
+*/
 
 
 
