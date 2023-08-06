@@ -97,7 +97,7 @@ const pattern = 'd.M.yyyy HH:mm:ss.SSS \'GMT\' XXX (z)'
 const output = format(zonedDate, pattern, { timeZone: 'Europe/Berlin' })
 
 
-const date = new Date(2021, 0, 1, 13);
+const date2 = new Date(2021, 0, 1, 13);
 console.log(date)
 console.log(+date)
 
