@@ -1,5 +1,6 @@
 const app = require('./servidor');
+const rotas = require('./rotas');
 
-const teste = 2;
+app.use(rotas)
 
 app.listen(3000);
