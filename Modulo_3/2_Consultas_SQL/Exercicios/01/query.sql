@@ -1,1 +1,13 @@
-
+-- Select compositor, id from musicas
+-- Select compositor, tempo from musicas where tempo > 4*60;
+-- Select compositor, composicao from musicas where id between 47 and 123;
+-- Select * from musicas where compositor is not NULL and tempo >5*60 and compositor <> 'Bach';
+-- Select composicao, tempo from musicas where compositor = 'Mozart' or compositor = 'Bach'
+-- Select * from musicas order by id desc
+-- Select * from musicas order by tempo desc
+-- Select * from musicas order by tempo asc Limit 5
+-- Select * from musicas order by tempo desc Limit 10
+-- Select * from musicas order by tempo asc limit 10 offset 5;
+-- Select * from musicas limit 10 offset 30
+-- Select * from musicas limit 12 offset 12*6
+-- Select * from musicas where
