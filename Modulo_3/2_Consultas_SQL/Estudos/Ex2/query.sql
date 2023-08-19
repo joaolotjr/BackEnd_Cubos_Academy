@@ -1,0 +1,1 @@
+Select * from musicas Order by id desc limit 20;
