@@ -1,0 +1,1 @@
+Select compositor, composicao, tempo from musicas where tempo between 120 and 300 and compositor != 'Mozart';
