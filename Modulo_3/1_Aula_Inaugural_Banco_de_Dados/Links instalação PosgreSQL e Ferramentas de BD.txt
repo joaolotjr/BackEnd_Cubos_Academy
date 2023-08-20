@@ -1,0 +1,10 @@
+instalar postgreSQL
+
+https://www.postgresql.org/
+
+-----------
+Instalar beekeeper
+
+https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v3.9.20
+OU
+https://www.beekeeperstudio.io/
