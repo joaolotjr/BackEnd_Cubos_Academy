@@ -10,4 +10,9 @@
 -- Select * from musicas order by tempo asc limit 10 offset 5;
 -- Select * from musicas limit 10 offset 30
 -- Select * from musicas limit 12 offset 12*6
--- Select * from musicas where
+-- Select distinct compositor from musicas where compositor is not NULL
+-- Select distinct compositor, composicao from musicas
+-- Select * from musicas where compositor like 'Bra%'
+-- Select * from musicas where ritmo like '%troppo'
+-- Select * from musicas where composicao ilike '%quartet%'
+select * from musicas where composicao not ilike '%quintet%'
