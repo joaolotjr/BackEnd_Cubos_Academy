@@ -30,6 +30,28 @@
 --select cast(agendamento as time) from agendamentos;
 --select cast(agendamento as timestamp) from agendamentos;
 
+--select age('2022-03-16 12:00:00', '2021-02-15 11:32:34');
+--select age('2022-03-16 12:00:00'::timestamp);
+--select age(cast('2022-03-16 12:00:00' as date));
+--select *, age(cast(agendamento as timestamp)) from agendamentos where cast(agendamento as timestamp) > now()
+
+--select * from usuarios;
+--select coalesce(NULL, NULL, 'batata', 'cenoura')
+--select concat(nome, ' - ',coalesce(telefone, 'não possui telefone')) from usuarios;
+--select id, concat(nome, ' - ',coalesce(telefone, email, 'não possui')) from usuarios;
+
+--select  idade, count(id) from usuarios group by idade;
+--select  idade, count(id), sum(idade) from usuarios group by idade
+
+
+-- 1 - Execute o script de criação da tabela farmacia
+
+-- 2 - Monte uma query que retorne a quantidade de produtos 
+-- agrupados por categoria e soma do estoque de todos os produtos
+-- de cada categoria.
+
+Select categoria, count(id) as "Quantidade produtos", sum(estoque) as "Soma Total do Estoque" from farmacia group by categoria;
+
 
 
 
