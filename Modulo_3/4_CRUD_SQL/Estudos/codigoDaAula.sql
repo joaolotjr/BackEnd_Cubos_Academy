@@ -22,3 +22,8 @@ create table if not exists produtos (
 --update produtos set nome = 'calça jeans', preco = 13450 where id = 3;
 --update produtos set nome = 'caderno de 10 matérias' where id = 3;
 --update produtos set categoria = 'calças', preco = 12950  where descricao is null;
+
+--delete from produtos where id = 2;
+--delete from produtos where descricao is null;
+
+select * from produtos;
