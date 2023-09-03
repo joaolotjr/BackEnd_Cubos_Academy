@@ -9,3 +9,12 @@ create table if not exists produtos (
   	preco integer,
   	categoria text
 );
+
+
+--insert into produtos (nome, descricao, preco, categoria) values ('camisa', 'Linda Camisa', 5999, 'Roupas');
+--insert into produtos (nome, descricao, preco, categoria) values ('camisa', NULL, 5999, 'Roupas'); 
+--insert into produtos (nome, preco, categoria) values ('camisa', 5999, 'Roupas');
+--insert into produtos (nome, descricao, preco, categoria) values ('camisa', NULL, 5999, 'Roupas');
+
+--insert into produtos (nome, descricao, preco, categoria) values ('calça Jeans', null, 12900, 'Roupas'),
+--('Bermuda', 'Bermuda longa preta', 12900, 'Roupas'),('meia', 'meia bonita do bob', 1290, 'Roupas');
