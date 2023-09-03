@@ -1,3 +1,5 @@
+create database exercicio_crud_sql;
+
 create table usuarios (
 	id serial,
   	nome text not null,
