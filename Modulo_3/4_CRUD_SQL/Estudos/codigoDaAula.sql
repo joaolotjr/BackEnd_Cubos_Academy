@@ -18,3 +18,7 @@ create table if not exists produtos (
 
 --insert into produtos (nome, descricao, preco, categoria) values ('calça Jeans', null, 12900, 'Roupas'),
 --('Bermuda', 'Bermuda longa preta', 12900, 'Roupas'),('meia', 'meia bonita do bob', 1290, 'Roupas');
+
+--update produtos set nome = 'calça jeans', preco = 13450 where id = 3;
+--update produtos set nome = 'caderno de 10 matérias' where id = 3;
+--update produtos set categoria = 'calças', preco = 12950  where descricao is null;
