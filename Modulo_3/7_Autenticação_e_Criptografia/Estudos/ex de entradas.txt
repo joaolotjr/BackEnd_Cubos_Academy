@@ -1,0 +1,20 @@
+{
+	"modelo": "S10",
+	"marca": "Chevrolet",
+	"ano": 2021,
+	"cor": "Prata",
+	"descricao": null
+}
+{
+	"modelo": "Celta",
+	"marca": "Chevrolet",
+	"ano": 2010,
+	"cor": "Vermelho",
+	"descricao": null
+}
+
+{
+	"nome": "Guido",
+	"email": "guido@email.com",
+	"senha": "123asbc"
+}
