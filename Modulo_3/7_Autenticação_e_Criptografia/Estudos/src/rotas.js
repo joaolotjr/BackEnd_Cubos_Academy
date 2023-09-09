@@ -7,11 +7,12 @@ const {
 	excluirCarro,
 } = require('./controladores/carros')
 
-const { cadastrarUsuario } = require('./controladores/usuarios')
+const { cadastrarUsuario, login } = require('./controladores/usuarios')
 
 const rotas = express()
 
 rotas.post('/usuario', cadastrarUsuario)
+rotas.post('/login', login)
 
 rotas.get('/carro', listarCarros)
 rotas.get('/carro/:id', detalharCarro)
