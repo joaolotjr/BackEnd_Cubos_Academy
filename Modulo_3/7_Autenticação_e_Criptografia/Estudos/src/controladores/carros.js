@@ -1,7 +1,13 @@
 const pool = require('../conexao')
+const jwt = require('jsonwebtoken')
+const senhaJwt = require('./senhaJwt')
 
 const listarCarros = async (req, res) => {
+	
+	
 	try {
+		
+		
 		const { rows } = await pool.query('select * from carros')
 
 		return res.json(rows)
@@ -12,8 +18,10 @@ const listarCarros = async (req, res) => {
 
 const detalharCarro = async (req, res) => {
 	const { id } = req.params
+	
 
 	try {
+		
 		const { rows, rowCount } = await pool.query(
 			'select * from carros where id = $1',
 			[id]

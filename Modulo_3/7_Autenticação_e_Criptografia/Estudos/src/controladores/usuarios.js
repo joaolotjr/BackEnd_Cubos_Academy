@@ -1,5 +1,7 @@
 const pool = require('../conexao')
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+const senhaJwt = require('./senhaJwt')
 
 const cadastrarUsuario = async (req, res) => {
 
@@ -37,7 +39,14 @@ const login = async (req, res) =>{
             return res.status(400).json({mensagem: 'Email ou senha invalida(s)'})
         }
 
-        return res.json('Usuario Autenticado!')
+        const token = jwt.sign({id: usuario.rows[0].id}, senhaJwt, {expiresIn: '8h' })
+
+        const { senha: _, ...usuarioLogado } = usuario.rows[0]
+
+        return res.json({usuario: usuarioLogado, token})
+
+        //return res.json('Usuario Autenticado!')
+
         
     } catch (error) {
         return res.status(500).json({mensagem: 'Erro interno do Servidor'})        
@@ -45,9 +54,16 @@ const login = async (req, res) =>{
 
 }
 
+const obterPerfil = async (req, res) => {
+
+    return res.json(req.usuario)
+
+}
+
 
 
 module.exports = {
     cadastrarUsuario,
-    login
+    login,
+    obterPerfil
 }
