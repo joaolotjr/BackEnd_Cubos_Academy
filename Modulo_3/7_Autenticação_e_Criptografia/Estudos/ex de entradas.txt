@@ -18,3 +18,9 @@
 	"email": "guido@email.com",
 	"senha": "123asbc"
 }
+
+{
+	"email": "guido3@email.com",
+	"senha": "123asbc"
+}
+
