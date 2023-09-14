@@ -21,7 +21,13 @@ app.get('/', async(req,res) => {
     //select * from agenda where id between 5 end 10;
     //const agenda = await knex('agenda').whereBetween('id',[5,10]).debug();
     //const agenda = await knex('agenda').whereBetween('id',[5,10]).orderBy('id', 'desc').debug();
-    const agenda = await knex('agenda').distinct('email').debug();
+    //const agenda = await knex('agenda').distinct('email', 'nome').debug();
+
+
+    //select email from agenda group by email
+    //const agenda = await knex('agenda').select('email').groupBy('email').count().debug();
+
+    const agenda = await knex('agenda').limit(5).offset(2).debug();
 
     return res.json(agenda)
 
