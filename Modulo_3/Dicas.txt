@@ -1,3 +1,7 @@
 Gerar dados SQL
 
 https://generatedata.com/
+
+
+
+https://www.toptal.com/developers/gitignore
