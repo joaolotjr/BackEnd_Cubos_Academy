@@ -7,37 +7,26 @@ app.use(express.json());
 
 app.get('/', async(req,res) => {
 
-    //const quantidadeMedicamentos = await knex('farmacia').count();
+    const guido = {
+        nome: 'Guido Cerqueira 4',
+        email: 'guido4@email.com',
+        telefone: '(99) 9999-9996'
+    }
+    const joao = {
+        nome: 'Joao Carlos',
+        email: 'JoaoCarlos@email.com',
+        telefone: '(99) 9999-9995'
+    }
+    const Maria = {
+        nome: 'maria',
+        email: 'Maria@email.com',
+        telefone: '(99) 9999-9994'
+    }
 
-    //const usuarioMaisNovo  = await knex('usuarios').min('idade').debug();
-    
-    //const somaEstoqueComCategoria = await knex('farmacia')
-    //.select('categoria')
-    //.sum('estoque')
-    //.whereNotNull('categoria')
-    //.groupBy('categoria')
-    //.debug();
+    //const agenda = await knex('agenda').insert(guido).returning(['id', 'nome']);
+    const agenda = await knex('agenda').insert([joao, Maria]).returning('*');
 
-    //const semCategoriaFarmacia = await knex('farmacia')
-    //.whereNull('categoria')
-    //.count();
-
-    //const quantidadeCategoria = await knex('farmacia')
-    //.select('categoria')
-    //.count()
-    //.whereNotNull('categoria')
-    //.groupBy('categoria')
-    //.debug();
-
-    const quantidadeUsuarios = await knex('usuarios')
-    .select('idade')
-    .count()
-    .where('idade', '>=', 18)
-    .groupBy('idade')
-    .debug();
-
-    
-    return res.json(quantidadeUsuarios)
+    return res.json(agenda)
 
 
 })
