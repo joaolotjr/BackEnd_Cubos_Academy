@@ -29,6 +29,36 @@ app.get('/', async(req,res) => {
     return res.json(agenda)
 
 
-})
+});
+
+app.put('/:id', async (req,res) => {
+    const {nome, email, telefone} = req.body;
+    const {id} = req.params;
+
+    const agendaAtualizada = await knex('agenda')
+    .update({nome, email, telefone})
+    .where({id})// ou .where('id', id)
+    .returning('*'); 
+
+    return res.json(agendaAtualizada)
+
+
+
+});
+
+
+app.delete('/:id', async (req,res) => {
+    const {id} = req.params;
+
+    const agendaExcluida = await knex('agenda')
+    .del()
+    .where({id})// ou .where('id', id)
+    .returning('*'); 
+
+    return res.json(agendaExcluida)
+
+
+
+});
 
 app.listen(3000);
