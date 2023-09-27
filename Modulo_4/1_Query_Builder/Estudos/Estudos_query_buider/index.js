@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', async(req,res) => {
-
+/*
     const guido = {
         nome: 'Guido Cerqueira 4',
         email: 'guido4@email.com',
@@ -22,6 +22,8 @@ app.get('/', async(req,res) => {
         email: 'Maria@email.com',
         telefone: '(99) 9999-9994'
     }
+
+    */
 
     //const agenda = await knex('agenda').insert(guido).returning(['id', 'nome']);
     const agenda = await knex('agenda').insert([joao, Maria]).returning('*');
@@ -56,9 +58,21 @@ app.delete('/:id', async (req,res) => {
     .returning('*'); 
 
     return res.json(agendaExcluida)
+});
 
 
+app.post('/:id/anotacoes', async (req,res) => {
+    const {id} = req.params;
+    const{ nota } = req.body;
 
+    const anotacao = await knex('anotacoes')
+    .insert({
+        agenda_id: id,
+        nota
+    })
+    .returning('*'); 
+
+    return res.json(anotacao)
 });
 
 app.listen(3000);
